@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Enchanted Plate - Menu</title>
+    <meta
+      name="description"
+      content="Welcome to Oh my food! This is the Enchanted Plate menu."
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97e3147ee9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--
+          ! HEADER !
+        -->
+      <header id="header" class="main-header container">
+        <a href="index.html">
+          <div class="main-header__menu-header">
+            <span class="main-header__arrow fas fa-arrow-left"></span>
+            <img
+              class="main-header__logo"
+              src="assets/img/logo.svg"
+              alt="ohmyfood logo"
+            />
+          </div>
+        </a>
+      </header>
+      <!--
+        ! SECTION-MENU-IMAGE !
+      -->
+      <section class="section-menu-image">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="assets/img/the-enchanted-plate-big.jpg"
+          />
+          <source
+            media="(min-width: 700px)"
+            srcset="assets/img/the-enchanted-plate-medium.jpg"
+          />
+          <source srcset="assets/img/the-enchanted-plate-small.jpg" />
+          <img
+            src="assets/img/the-enchanted-plate-big.jpg"
+            alt="One of the many delicious Enchanted Plate dish"
+            class="section-menu-image__image section-menu-image__the-enchanted-plate"
+          />
+        </picture>
+      </section>
+      <!--
+        ! SECTION-MENU !
+      -->
+      <div class="container">
+        <section class="section-menu main-sections">
+          <div class="section-menu__restaurant-header">
+            <h2 class="section-menu__restaurant-name">The Enchanted Plate</h2>
+            <div class="heart__heart-container">
+              <label
+                for="section-menu__checkbox-the-enchanted-plate"
+                class="heart__label"
+              >
+                <span class="heart__empty-heart far fa-heart"></span>
+                <input
+                  type="checkbox"
+                  class="heart__checkbox"
+                  id="section-menu__checkbox-the-enchanted-plate"
+                />
+                <span class="heart__full-heart fas fa-heart"></span>
+              </label>
+            </div>
+          </div>
+          <div class="section-menu__courses-container">
+            <!--
+            ? FIRST COURSE ?
+          -->
+            <article class="section-menu__course">
+              <h3 class="section-menu__course-header">Entrees</h3>
+              <!-- ? 1st entree ? -->
+              <div class="menu-card">
+                <label for="ravioli" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="ravioli"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Foie Gras Ravioli</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">With truffle cream</p>
+                        <p class="menu-card__price">25€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ? 2nd entree ? -->
+              <div class="menu-card">
+                <label for="caviar" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="caviar"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Oscietra Caviar</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">With buckwheat blinis</p>
+                        <p class="menu-card__price">35€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ? 3rd entree ? -->
+              <div class="menu-card">
+                <label for="lobster-leek" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="lobster-leek"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Lobster and Leek Foam</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">
+                          Marinated with orange zest
+                        </p>
+                        <p class="menu-card__price">20€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ? 4th entree ? -->
+              <div class="menu-card">
+                <label for="duck" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="duck"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Duck Foie Gras</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">
+                          With fig jam and grilled baguette
+                        </p>
+                        <p class="menu-card__price">35€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </article>
+            <!--
+            ? MAIN COURSE ?
+          -->
+            <article class="section-menu__course">
+              <h3 class="section-menu__course-header">Main dish</h3>
+              <!-- ? 1st main dish ? -->
+              <div class="menu-card">
+                <label for="scallops" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="scallops"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Fresh Buttered Scallops</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">With white celery puree</p>
+                        <p class="menu-card__price">40€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ? 2nd main dish ? -->
+              <div class="menu-card">
+                <label for="lobster" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="lobster"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Pan-Fried Lobster</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">
+                          With mashed sweet potatoes
+                        </p>
+                        <p class="menu-card__price">35€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ? 3rd main dish ? -->
+              <div class="menu-card">
+                <label for="ox-tail" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="ox-tail"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Braised Ox Tail</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">
+                          With wild rice and lemon zest
+                        </p>
+                        <p class="menu-card__price">44€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </article>
+            <!--
+            ? LAST COURSE ?
+          -->
+            <article class="section-menu__course">
+              <h3 class="section-menu__course-header">DESSERTS</h3>
+              <!-- ? 1st last dish ? -->
+              <div class="menu-card">
+                <label for="macaroons" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="macaroons"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">
+                        Chocolate and Hazelnut<br />Macaroons
+                      </h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">
+                          With caramel butter ice cream
+                        </p>
+                        <p class="menu-card__price">18€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ? 2nd last dish ? -->
+              <div class="menu-card">
+                <label for="baba" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="baba"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Baba au Rhum</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">With lemon drizzle</p>
+                        <p class="menu-card__price">22€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ? 3rd last dish ? -->
+              <div class="menu-card">
+                <label for="lemon" class="input-dishes">
+                  <div class="menu-card__flexed-items">
+                    <input
+                      type="checkbox"
+                      class="menu-card__checkbox"
+                      id="lemon"
+                    />
+                    <div class="menu-card__infos">
+                      <h4 class="menu-card__header">Lemon Meringue Pie</h4>
+                      <div class="menu-card__desc-n-price">
+                        <p class="menu-card__desc">Destructured</p>
+                        <p class="menu-card__price">23€</p>
+                      </div>
+                    </div>
+                    <div class="menu-card__success-container">
+                      <span
+                        class="menu-card__success fas fa-check-circle"
+                      ></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </article>
+          </div>
+          <a class="section-menu__btn pink-btn" href="#header"> Order</a>
+        </section>
+      </div>
+      <!--
+          ! FOOTER !
+        -->
+      <footer class="footer">
+        <div class="container">
+          <a href="#">
+            <h1 class="footer__brand">ohmyfood</h1>
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a href="#">
+                  <span class="footer__logo fas fa-utensils"></span>
+                  Suggest a restaurant
+                </a>
+              </li>
+              <li class="footer__li">
+                <a href="#">
+                  <span class="footer__logo fas fa-hands-helping"></span>
+                  Become a partner
+                </a>
+              </li>
+              <li class="footer__li">
+                <a href="#"> Legal </a>
+              </li>
+              <li class="footer__li">
+                <a href="mailto:contact@ohmyfood.com"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
